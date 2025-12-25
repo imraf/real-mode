@@ -1,0 +1,10 @@
+{
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "webfetch": "allow",
+    "external_directory": "deny"
+  },
+  "autoupdate": false,
+  "$schema": "https://opencode.ai/config.json"
+}

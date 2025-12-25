@@ -1,0 +1,325 @@
+/* --- GLOBAL RESET --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* --- VINTAGE VARIABLES --- */
+:root {
+    --paper-bg: #fdf6e3;
+    --ink-color: #1a1917;
+    --faded-ink: #33312e;
+    --border-black: #000000;
+    --headline-font: 'Playfair Display', 'Times New Roman', serif;
+    --body-font: 'Merriweather', 'Georgia', serif;
+    --mono-font: 'Courier Prime', monospace;
+}
+
+/* --- BODY & BACKGROUND --- */
+body {
+    background-color: var(--paper-bg);
+    background: url('images/sc2000.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--ink-color);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    line-height: 1.35; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #c5c3c6;
+    padding: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+/* --- LINKS --- */
+a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--ink-color); }
+a:hover { background-color: rgba(0,0,0,0.05); }
+
+/* --- TYPOGRAPHY UTILS --- */
+h1, h2, h3, h4 {
+    font-family: var(--headline-font);
+    font-weight: 900;
+    margin: 0 0 8px 0;
+    line-height: 0.95;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+p {
+    margin: 0 0 10px 0;
+    text-align: justify; /* Newspaper justification */
+    font-size: 0.95rem;
+    hyphens: auto; /* Hyphenate words to fit narrow columns */
+}
+
+/* --- HEADER / MASTHEAD --- */
+header {
+    text-align: center;
+    border-bottom: 4px double var(--border-black);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.masthead {
+    font-size: clamp(3rem, 10vw, 5.5rem); /* Responsive giant text */
+    font-weight: 900;
+    letter-spacing: -3px;
+    margin-bottom: 5px;
+    /* Texture on the text itself */
+    color: #1a1a1a;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    transform: scaleY(1.1); /* Condensed look */
+}
+
+.tagline {
+    font-family: var(--headline-font);
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.subhead {
+    font-family: var(--mono-font);
+    font-size: 0.75rem;
+    border-top: 2px solid var(--border-black);
+    border-bottom: 1px solid var(--border-black);
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* --- SECTIONS & GRID --- */
+/* Common separator for sections */
+section {
+    border-bottom: 1px solid var(--border-black);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    /* font-size: 1.6rem; */
+    text-align: center;
+    border-bottom: 1px solid var(--border-black);
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    width: 100%;
+}
+
+h2 span { 
+    background: #c5c3c6; /* Mask the line behind text - keeping slight off-white to match container somewhat or transparent? kept original */
+    padding: 0 10px; 
+}
+
+/* --- SCOOPS (Front Page) --- */
+.scoop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Symmetric grid */
+    gap: 15px;
+    border-bottom: 2px solid var(--border-black);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* The Lead Story */
+.scoop-item:first-child {
+    grid-column: 1 / -1;
+    column-count: 2; /* Split lead story into 2 columns */
+    column-gap: 20px;
+    column-rule: none;
+    border-bottom: 1px solid var(--border-black); /* Added divider */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.scoop-item:first-child h3 {
+    column-span: all;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.scoop-item:first-child p:first-of-type::first-letter {
+    float: left;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    padding-right: 8px;
+    padding-left: 2px;
+    font-family: var(--headline-font);
+    font-weight: 900;
+}
+
+/* Other scoops */
+.scoop-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.scoop-item .source-link {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.reporter {
+    display: block;
+    text-align: right;
+    font-family: var(--mono-font);
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-top: 2px;
+    color: #444;
+}
+
+/* --- MIXED FEED (3 Columns) --- */
+.mixed-feed {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 1px solid #aaa;
+    orphans: 1;
+    widows: 1;
+}
+
+.mixed-feed article {
+    display: inline-block; 
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    vertical-align: top;
+    /* Retain border unless it's a flair box which has its own border */
+    border-bottom: 1px dotted var(--ink-color); 
+}
+
+/* Flair Box (Commentary) */
+.flair-box {
+    border: 2px solid var(--border-black) !important;
+    padding: 10px;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0,0,0,0.02),
+        rgba(0,0,0,0.02) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    position: relative;
+    /* Remove bottom border from flair boxes as they have full border */
+    margin-bottom: 15px !important; 
+}
+
+.flair-box h3 { font-style: italic; font-family: var(--body-font); font-size: 1.1rem; }
+.flair-box::before { display: none; } /* Remove the emoji */
+
+/* --- TECH BOARDS (Classifieds Style) --- */
+.tech-boards-section {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.tech-boards-section h2 { margin-bottom: 15px; }
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns like classifieds */
+    gap: 10px;
+}
+
+.tech-list li {
+    border: 1px solid var(--border-black);
+    padding: 8px;
+    font-size: 0.85rem;
+    background: rgba(235,235,230,1);
+}
+
+.tech-list h4 {
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+}
+
+.tech-list p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.tech-list .source-link {
+    font-size: 0.7rem;
+    float: right;
+    margin-top: 5px;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: 30px;
+    border-top: 4px double var(--border-black);
+    padding-top: 10px;
+    text-align: center;
+    font-family: var(--mono-font);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* --- MOBILE / NARROW VIEW --- */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px; /* Kept margin to show background on mobile */
+        width: auto; /* Allow it to shrink */
+        padding: 10px;
+        /* Re-enable border/shadow if desired, or keep flat but with background visible. 
+           Previous code removed border/shadow. I will keep border/shadow to separate from image. */
+        border: 1px solid #d4d4d4; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .masthead { font-size: 3.2rem; }
+
+    .scoop-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .scoop-item:first-child {
+        column-count: 1; /* Reset columns for mobile */
+    }
+
+    .mixed-feed {
+        column-count: 1; /* Single column feed */
+    }
+    
+    .mixed-feed article {
+        display: block; /* Back to block on mobile */
+    }
+
+    .tech-list {
+        grid-template-columns: 1fr 1fr; /* 2 columns for classifieds on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-list {
+        grid-template-columns: 1fr; /* 1 column on very narrow */
+    }
+    .subhead {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}

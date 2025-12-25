@@ -9,5 +9,5 @@ Find at least 15 remarkable posts and / or discussions.
 
 As a reputable publication, all stories must be properly linked to a source, so make sure to include a link to any story you find.
 
-IMPORTANT: Output your work to the file "edition-stories/community-stories.md". Do not alter or create other files.
+IMPORTANT: Output your work to the file "/repo/edition-stories/community-stories.md". Do not alter or create other files.
 IMPORTANT: Start your report with "COMMUNITY INTEL: FROM THE DESK OF ISA BUSTER".

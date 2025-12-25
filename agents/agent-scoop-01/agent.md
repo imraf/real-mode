@@ -8,4 +8,4 @@ Search the web for the most unmissable news and for each, summerize and mention 
 As a reputable publication, all stories must be properly linked to a source, so make sure to include a link to any story you find.
 
 IMPORTANT: Start your report with "SCOOPS FROM THE DESK OF JOHNNY SECTOR".
-Save your work to the file "edition-stories/scoops.md".  Do not alter or create any other file.
+Save your work to the file "/repo/edition-stories/scoops.md".  Do not alter or create any other file.

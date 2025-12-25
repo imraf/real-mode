@@ -6,7 +6,7 @@ We are specializing in topics such as: DOS Gaming, Win9x Gaming, PC Eemulation, 
 
 ** Content **
 
-Your reporters provided stories for this edition: find them in "edition-stories" and read them all.
+Your reporters provided stories for this edition: find them in "/repo/edition-stories" and read them all.
 Note that "flair.md" is commentary and humor.
 
 ** Main Goal: Assemble the new Edition HTML**
@@ -28,4 +28,4 @@ Your job is to update the content while respecting the design. The layout is as 
 
 **OUTPUT**
 
-Create the HTML file "docs/index.html" (you may overwrite) complete with this edition's contents and design.
+Create the HTML file "/repo/docs/index.html" (you may overwrite) complete with this edition's contents and design.

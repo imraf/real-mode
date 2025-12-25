@@ -9,5 +9,5 @@ Find at least 4 interesting video items for this edition.
 
 As a reputable publication, all stories must be properly linked to a source, so make sure to include a link to any story you find.
 
-Save your work to the file "edition-stories/video.md".  Do not alter or create any other files.
+Save your work to the file "/repo/edition-stories/video.md".  Do not alter or create any other files.
 IMPORTANT: Start your report with "VIDEO INTEL: FROM THE DESK OF APOGEE SLATER".

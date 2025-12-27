@@ -107,6 +107,12 @@ section {
     padding-bottom: 15px;
 }
 
+.scoops-section {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 h2 {
     /* font-size: 1.6rem; */
     text-align: center;
@@ -119,6 +125,19 @@ h2 {
 h2 span { 
     background: #c5c3c6; /* Mask the line behind text - keeping slight off-white to match container somewhat or transparent? kept original */
     padding: 0 10px; 
+}
+
+/* Section Header Classes */
+.scoops-header {
+    /* Inherits default h2 styles */
+}
+
+.community-header {
+    column-span: all;
+}
+
+.tech-boards-header {
+    /* Inherits default h2 styles */
 }
 
 /* --- SCOOPS (Front Page) --- */

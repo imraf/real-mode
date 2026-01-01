@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imraf.github.io/real-mode/">
+    <meta property="og:title" content="Real Mode Weekly">
+    <meta property="og:description" content="Classic Computing, Retro Gaming and Beige Hardware">
+    <meta property="og:image" content="https://imraf.github.io/real-mode/images/thumb.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://imraf.github.io/real-mode/">
+    <meta property="twitter:title" content="Real Mode Weekly">
+    <meta property="twitter:description" content="Classic Computing, Retro Gaming and Beige Hardware">
+    <meta property="twitter:image" content="https://imraf.github.io/real-mode/images/thumb.jpg">
+
+    <title>Real Mode Weekly</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Additional inline styles for the new layout requirements */
+        .flair-box {
+            background-color: #e7e7e7;
+            border: 2px solid #333;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-family: 'Courier Prime', monospace;
+            break-inside: avoid;
+        }
+        .flair-box h4 {
+            margin-top: 0;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 5px;
+        }
+        .flair-box p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="masthead">Real Mode Weekly</h1>
+            <div class="tagline">System Requirements: 56K Modem, VGA Graphics, Beige Hardware</div>
+            <div class="subhead">
+                <span>Vol. 1, No. 1</span>
+                <span>Dec 25, 2025 • Every Thu.</span>
+                <span>Cost: 640KB</span>
+            </div>
+        </header>
+
+        <section class="scoops-section">
+            <h2 class="scoops-header"><span>TODAY'S HEADLINES</span></h2>
+            <div class="scoop-grid">
+                <!-- Johnny Sector Scoops -->
+                <article class="scoop-item">
+                    <h3>GC Classic Decompiled: Twilight Princess Breaks Free</h3>
+                    <p>In a massive win for game preservation and the emulation community, <i>The Legend of Zelda: Twilight Princess</i> has been fully decompiled. This milestone opens the floodgates for native PC ports, mods, and performance enhancements that go far beyond standard emulation. The decompilation project, a collaborative effort by dedicated fans, allows for a deeper understanding of the game's engine. This could lead to potential bug fixes and the ability to run the game on a wider range of hardware without the overhead of emulation. Similar projects for other N64 and GameCube titles have already demonstrated the immense value of such preservation efforts.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/zelda-twilight-princess-has-been-decompiled" class="source-link">Continued on Page 2 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>Star Fox 64 Barrel Rolls onto PC</h3>
+                    <p>Just in time for the holidays, a new PC recompilation of <i>Star Fox 64</i> has been released. Unlike traditional emulation, this recompilation translates the game into native PC code, resulting in silky smooth performance and zero input lag.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/star-fox-64-gets-another-pc-recompilation-just-in-time-for-christmas" class="source-link">Continued on Page 3 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>Analogue 3D Accuracy Disputed</h3>
+                    <p>The boutique hardware manufacturer Analogue is under fire after new research cast doubt on the accuracy claims of their "Analogue 3D" N64 FPGA console. Community researchers suggest that the marketing surrounding the device's 100% cycle-accurate replication might be overstated.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/they-lied-new-research-casts-doubt-on-analogue-3d-accuracy-claims" class="source-link">Continued on Page 4 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+
+                <!-- Penny Pentium Scoops -->
+                <article class="scoop-item">
+                    <h3>EGM’S GLORY DAYS IMMORTALIZED</h3>
+                    <p>Grab your magnifying glasses! A brand new documentary titled "Pixels To Pages" has hit YouTube, and it's a love letter to the glossy, ink-smudged pages of <i>Electronic Gaming Monthly</i>. A comprehensive look at EGM's history and impact.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/pixels-to-pages-is-a-remarkable-new-youtube-documentary-covering-the-history-of-electronic-gaming-monthly" class="source-link">Continued on Page 5 &raquo;</a>
+                    <span class="reporter">— Penny Pentium</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>LEGO GAME BOY: PLAYING WITH POWER</h3>
+                    <p>Hold onto your bricks! Some genius modder looked at the LEGO Game Boy set and thought, "Nice sculpture, but can it run <i>Tetris</i>?" The answer is YES. They've crammed actual hardware inside the plastic shell.</p>
+                    <a href="https://retrododo.com/a-modder-has-already-turned-the-lego-game-boy-into-a-working-handheld-that-plays-cartridges/" class="source-link">Continued on Page 6 &raquo;</a>
+                    <span class="reporter">— Penny Pentium</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>NOKI'S PORTABLE COMMODORE 64</h3>
+                    <p>Imagine if Commodore, Apple, and Raspberry Pi had a baby in the 80s. Noki has built exactly that! This scratch-built portable C64 is a stunning piece of engineering that uses 3D printing and emulation.</p>
+                    <a href="https://www.tomshardware.com/video-games/retro-gaming/this-scratch-built-period-correct-design-portable-commodore-64-is-a-love-letter-to-an-alternate-commodore-history-nokis-cleverly-designed-homage-to-the-era-merges-commodore-apple-and-raspberry-pi" class="source-link">Continued on Page 7 &raquo;</a>
+                    <span class="reporter">— Penny Pentium</span>
+                </article>
+                
+                <!-- More Johnny Sector -->
+                 <article class="scoop-item">
+                    <h3>Genesis Graveyard Yields "Pit Fighter II"</h3>
+                    <p>The Video Game History Foundation has unearthed a long-lost sequel to the arcade brawler <i>Pit Fighter</i>. This unreleased prototype from 1993 offers a fascinating "what if" glimpse into a timeline where the gritty digitized fighter got a second round.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/long-lost-genesis-sequel-to-pit-fighter-is-found-thanks-to-the-vghf" class="source-link">Continued on Page 8 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+
+                 <article class="scoop-item">
+                    <h3>Analogue Pocket Now Dumps ROMs</h3>
+                    <p>A new firmware update for the popular Analogue Pocket handheld has quietly enabled a killer feature: the ability to dump ROMs and save files directly from original Game Boy cartridges to the SD card.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/you-can-now-use-the-analogue-pocket-to-dump-your-game-boy-cartridges" class="source-link">Continued on Page 9 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+
+                 <article class="scoop-item">
+                    <h3>Commodore 64 Ultimate: New Gold Standard?</h3>
+                    <p>A new hardware review praises the "Commodore 64 Ultimate" as the definitive modern way to experience the legendary 8-bit computer. Utilizing FPGA technology, it replicates the C64 experience with stunning accuracy.</p>
+                    <a href="https://www.timeextension.com/reviews/commodore-64-ultimate-the-gold-standard-of-retro-computer-revivals" class="source-link">Continued on Page 10 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+
+                 <article class="scoop-item">
+                    <h3>NES Mega Man Gets a Modern "Revamp"</h3>
+                    <p>The original NES <i>Mega Man</i> has received a significant fan-made overhaul. This "Revamped" version patches the 1987 classic to fix bugs, reduce slowdown, and tweak level design for a fairer, more polished experience.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/the-original-nes-mega-man-has-just-got-a-new-revamped-version-courtesy-of-a-fan" class="source-link">Continued on Page 11 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+                
+                <!-- More Penny -->
+                <article class="scoop-item">
+                    <h3>LEGO ARCADE: BUILDING NOSTALGIA</h3>
+                    <p>If you miss the sticky floors and neon lights of the 80s arcades, LEGO has you covered. A new set captures the spirit of the arcade era, letting you build your own miniature coin-op paradise.</p>
+                    <a href="https://retrododo.com/this-lego-arcade-set-captures-the-true-spirit-of-retro-gaming/" class="source-link">Continued on Page 12 &raquo;</a>
+                    <span class="reporter">— Penny Pentium</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="mixed-feed">
+            <h2 class="community-header"><span>COMMUNITY WIRE</span></h2>
+
+            <article>
+                <h3>SimCity 2000 IRL Newspaper</h3>
+                <p>A user has created a personal dashboard inspired by the iconic SimCity 2000 newspaper aesthetic. It updates with real content every morning! A perfect blend of nostalgia and modern utility.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pvau7l/i_wanted_a_newspaper_inspired_by_simcity_2000_but/" class="source-link">Continued on Page 13 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: SimCity 2000 Newspaper</h4>
+                <p>Ah, yes. Finally, a way to read about the impending doom of the real world with the comforting thought that a giant alien monster might just stomp on it all anyway. I can almost hear the "Reticulating Splines".</p>
+            </div>
+
+            <article>
+                <h3>1987 Computer Chronicles Christmas Buyer's Guide</h3>
+                <p>Clint from LGR takes us on a ghost-of-Christmas-past tour, commentating over a classic 1987 episode of <i>The Computer Chronicles</i>. It's a fascinating time capsule showing the fierce battle for the home desktop.</p>
+                <a href="https://www.youtube.com/watch?v=bWXLDfbmpU8" class="source-link">Continued on Page 14 &raquo;</a>
+                <span class="reporter">— Apogee Slater</span>
+            </article>
+            
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: 1987 Buyer's Guide</h4>
+                <p>"Look at this powerhouse with 640K of RAM for only $3000!" It's enough to make your wallet weep tears of joy for modern inflation... almost.</p>
+            </div>
+
+            <article>
+                <h3>High-Res Windows 3.1 Gaming</h3>
+                <p>A quest for the sharpest pixels on Windows 3.1. The community is compiling a list of games that support high resolutions (SVGA and beyond) for 3.1x systems. Essential knowledge for 86box power users.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pvcpgg/list_of_windows_31311_games_that_supports_high/" class="source-link">Continued on Page 15 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: High-Res Win 3.1</h4>
+                <p>Why? Because seeing a "General Protection Fault" in 1024x768 is just so much more immersive than in 640x480. It's high-definition frustration, folks!</p>
+            </div>
+
+            <article>
+                <h3>Final Doom Yellow Key Fix</h3>
+                <p>Old bugs never die, they just get patched by the community decades later. A discussion on properly applying the "Yellow Key Card Fix" for Final Doom: TNT Evilution.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pv63uz/the_final_doom_yellow_key_card_fix/" class="source-link">Continued on Page 16 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: Doom Fix</h4>
+                <p>It only took... what, 30 years? At this rate, we can expect a patch for the Y2K bug just in time for the year 3000.</p>
+            </div>
+
+            <article>
+                <h3>Pac-Guy Christmas: Klik & Play Freeware at Retail?</h3>
+                <p>In a bizarre twist of 90s retail shenanigans, this video explores <i>Pac-Guy Christmas</i>, a game made with the consumer tool <i>Klik & Play</i> that somehow ended up on store shelves.</p>
+                <a href="https://www.youtube.com/watch?v=k-y14L_6R1s" class="source-link">Continued on Page 17 &raquo;</a>
+                <span class="reporter">— Apogee Slater</span>
+            </article>
+
+            <article>
+                <h3>The Aging of Digitized Graphics</h3>
+                <p>A spicy debate on how "digitized" graphics (think Mortal Kombat or Phantasmagoria) have aged compared to pixel art. Some say they're campy gold, others say they're just... old.</p>
+                <a href="https://www.reddit.com/r/retrogaming/comments/1pv3m6a/when_you_look_back_at_games_with_digitized/" class="source-link">Continued on Page 18 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: Digitized Graphics</h4>
+                <p>Look, if you can't appreciate the sheer artistry of a low-res photo of a guy in a ninja costume pasted onto a 16-bit background, then you clearly have no soul.</p>
+            </div>
+
+            <article>
+                <h3>Modern HTTPS on Mac OS 9: CherryBrowse</h3>
+                <p>One of the biggest headaches for vintage Mac lovers is the "SSL Handshake Error." Gambizzle shows off a new solution called CherryBrowse that acts as a bridge, allowing a classic Mac OS 9 machine to browse the modern web.</p>
+                <a href="https://www.youtube.com/watch?v=Fj2F27z6z20" class="source-link">Continued on Page 19 &raquo;</a>
+                <span class="reporter">— Apogee Slater</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: Modern Web on Mac OS 9</h4>
+                <p>Incredible. Now you can experience the sheer terror of modern ad trackers and bloatware on a browser engine that was discontinued when Britney Spears was still a teenager.</p>
+            </div>
+
+            <article>
+                <h3>Emulation "Dad Gift"</h3>
+                <p>A heartwarming post showcasing a setup gifted to a dad, proving that emulation is often the best way to keep the retro flame alive for families.</p>
+                <a href="https://www.reddit.com/r/retrogaming/comments/1putfne/dad_gift/" class="source-link">Continued on Page 20 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>J.J. & Jeff Nostalgia</h3>
+                <p>A humor-filled thread about the quirky PC Engine/TurboGrafx-16 game, sparking memories of its bizarre humor and "greedy" characters.</p>
+                <a href="https://www.reddit.com/r/retrogaming/comments/1put6k2/well_isnt_jj_just_a_greedy_little_bastard/" class="source-link">Continued on Page 21 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>C.D. SPINNER: RE: J.J. & Jeff</h4>
+                <p>Nothing says "gaming excellence" quite like a side-scroller where your main weapon is flatulence. Truly, a sophisticated title for the connoisseur.</p>
+            </div>
+
+            <article>
+                <h3>Toasting on the Go: Psion PDA Online</h3>
+                <p>Folium Creations takes a beloved 90s organizer, the Psion PDA, and forces it into the 2020s by connecting it to Mastodon via a null-modem setup.</p>
+                <a href="https://www.youtube.com/watch?v=0P4Yd9lP8_w" class="source-link">Continued on Page 22 &raquo;</a>
+                <span class="reporter">— Apogee Slater</span>
+            </article>
+
+            <article>
+                <h3>TIE Fighter 95 on the Desk</h3>
+                <p>A simple but powerful image: the TIE Fighter 95 CD sitting on a battlestation. Sometimes the physical media itself is enough to trigger a wave of nostalgia for the golden age of space sims.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pdzvez/tie_fighter_95_cd_on_my_battlestation/" class="source-link">Continued on Page 23 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+            
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: TIE Fighter CD</h4>
+                <p>I can feel the urge to inspect my cargo and destroy rebel scum rising within me. That, or it's just the urge to find a CD-ROM drive that actually works in 2025.</p>
+            </div>
+
+            <article>
+                <h3>Ski or Die!</h3>
+                <p>Remember this classic? A shoutout to EA's winter sports collection "Ski or Die". The community reflects on the glory days of DOS sports compilations.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pci29i/ski_or_die/" class="source-link">Continued on Page 24 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: Ski or Die!</h4>
+                <p>In my experience with DOS sports games, it was usually "Ski AND Die." Repeatedly. Usually by hitting a tree at 2 miles per hour.</p>
+            </div>
+
+            <article>
+                <h3>Commander Keen Anniversary</h3>
+                <p>Happy Anniversary to the boy genius! The community celebrates another year of Commander Keen, the platformer that defined PC gaming for a generation.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pmvcfj/happy_anniversary_commander_keen/" class="source-link">Continued on Page 25 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>Twilight Princess Decompiled</h3>
+                <p>A massive milestone for preservation and modding: The Legend of Zelda: Twilight Princess has been fully decompiled! This opens the door for native PC ports and deep mods.</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1psiffr/twilight_princess_has_been_decompiled/" class="source-link">Continued on Page 26 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+            
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: Twilight Princess</h4>
+                <p>Great! Now we can look forward to seeing Link run around Hyrule as Thomas the Tank Engine, holding a lightsaber, while the moon from Majora's Mask crashes down in 4K resolution.</p>
+            </div>
+
+            <article>
+                <h3>melonDS gets a New Renderer</h3>
+                <p>Big news for DS emulation fans: melonDS is working on a new hardware renderer. Expect better performance and visual enhancements in the future.</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1phvpdl/melonds_new_hardware_renderer_in_the_works/" class="source-link">Continued on Page 27 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>DuckStation PS1 Authenticity</h3>
+                <p>DuckStation continues to impress with a new commit adding an option to mimic the graphics output of older PS1 GPUs. Perfect for those chasing that authentic "wobbly" texture look.</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1pv6m13/new_commit_to_duckstation_adds_option_to_show/" class="source-link">Continued on Page 28 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>The 10-Year Wait AS/400 Haul</h3>
+                <p>Patience pays off. A user waited 10 years to acquire one of the earliest AS/400 systems, complete with documentation and tapes. A true heavy iron rescue mission.</p>
+                <a href="https://www.reddit.com/r/vintagecomputing/comments/1pcz4fq/i_waited_10_years_for_this_my_biggest_haul_yet/" class="source-link">Continued on Page 29 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+            
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: AS/400 Haul</h4>
+                <p>That's dedication. Or maybe they just needed that long to reinforce their floorboards. Pretty sure you need a commercial driver's license just to move the manual.</p>
+            </div>
+
+            <article>
+                <h3>University Vintage Collection Discovery</h3>
+                <p>A student discovered their university houses a vintage computing collection. A remind to check your local institutions—you never know what history is hiding in the basement.</p>
+                <a href="https://www.reddit.com/r/vintagecomputing/comments/1p99cay/just_found_out_that_my_university_has_a_vintage/" class="source-link">Continued on Page 30 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>9-in-1 Retro PC Collection</h3>
+                <p>Why have one retro PC when you can have nine? A user showcases a "little" collection spanning from 1997 to 2009, covering the most exciting era of 3D acceleration.</p>
+                <a href="https://www.reddit.com/r/retrobattlestations/comments/1p8vjql/9in1_my_little_retro_pc_collection_from_1997_to/" class="source-link">Continued on Page 31 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+            
+             <div class="flair-box">
+                <h4>C.D. SPINNER: RE: 9-in-1 Collection</h4>
+                <p>Nine retro PCs? That's not a collection; that's a small power plant. I hope their electric bill doesn't come with a "High Score" listing at the top.</p>
+            </div>
+
+            <article>
+                <h3>Productivity Skyrocketing</h3>
+                <p>A tongue-in-cheek show-and-tell of a retro setup where "productivity is skyrocketing." We all know that means playing games, but hey, it <i>looks</i> productive!</p>
+                <a href="https://www.reddit.com/r/retrobattlestations/comments/1p9fs31/my_productivity_is_skyrocketing/" class="source-link">Continued on Page 32 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+        </section>
+
+        <section class="tech-boards-section">
+            <h2 class="tech-boards-header"><span>TECH BOARDS</span></h2>
+            <ul class="tech-list">
+                <li>
+                    <h4>Mitsubishi MP286/2300 Desktop PC XTIDE boot-up issues</h4>
+                    <p>A user is troubleshooting XTIDE boot-up problems on their Mitsubishi MP286/2300 Desktop PC.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109517" class="source-link">See Page 33 &raquo;</a>
+                </li>
+                <li>
+                    <h4>What game are you playing now?</h4>
+                    <p>The community continues to share and discuss the games they are currently playing in this long-running thread.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=35778" class="source-link">See Page 33 &raquo;</a>
+                </li>
+                <li>
+                    <h4>i5-3570k Temperature & power consumption</h4>
+                    <p>Members are discussing the temperature metrics and power consumption characteristics of the Intel i5-3570k processor.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109529" class="source-link">See Page 33 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Socket 939 Haul</h4>
+                    <p>A forum member shows off a recent acquisition of Socket 939 hardware components.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109525" class="source-link">See Page 34 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Restrictions of 386(SX?) with 16MB RAM</h4>
+                    <p>A technical discussion on the architectural restrictions and issues faced when equipping a 386SX system with 16MB of RAM.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109521" class="source-link">See Page 34 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>3D Accelerated Games List (Proprietary APIs - No 3DFX/Direct3D)</h4>
+                    <p>A sticky resource listing games that utilize proprietary 3D APIs, explicitly excluding those for 3DFX and Direct3D.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=33483" class="source-link">See Page 35 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>List of Web Browsers For All Operating Systems</h4>
+                    <p>A comprehensive reference list of web browsers available across a wide variety of operating systems.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=12102" class="source-link">See Page 35 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Open source DOS games</h4>
+                    <p>A thread dedicated to discovering and discussing open-source games that run on DOS.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=37927" class="source-link">See Page 36 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Asus P5A and AMD K6-3 / 400 => both dead?</h4>
+                    <p>A user seeks assistance in diagnosing whether their Asus P5A motherboard and AMD K6-3 processor have both failed.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109531" class="source-link">See Page 36 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>dgVodooo 2.8.x and related WIP versions</h4>
+                    <p>Ongoing discussion and updates regarding the development of dgVoodoo version 2.8.x and its work-in-progress builds.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=95377" class="source-link">See Page 37 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>What is the difference between Rage XL and Rage XC?</h4>
+                    <p>A user asks for clarification on the technical differences between the ATI Rage XL and Rage XC graphics chips.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109509" class="source-link">See Page 37 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Vista x64 has a hard time installing, but X32 is fine?</h4>
+                    <p>Troubleshooting installation issues with Windows Vista x64, while noting that the 32-bit version installs correctly.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=101130" class="source-link">See Page 38 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>What modern activity did you get up to today?</h4>
+                    <p>A casual "off-topic" thread where members chat about their daily activities unrelated to retro computing.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=60650" class="source-link">See Page 39 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Dead Motherboard repair</h4>
+                    <p>A repair log or request for help concerning a non-functional motherboard.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109530" class="source-link">See Page 39 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>RReady (Rendition Verite wrapper) Test Build (Alpha 1)</h4>
+                    <p>Feedback and testing results for the Alpha 1 build of RReady, a wrapper for Rendition Verite graphics.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=95721" class="source-link">See Page 40 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>PCMCIA Sound Cards</h4>
+                    <p>Discussion surrounding the selection and use of PCMCIA sound cards for retro laptop gaming.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=30840" class="source-link">See Page 40 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Test and troubleshoot PC@LIVE motherboards</h4>
+                    <p>A dedicated thread for testing and troubleshooting issues specific to PC@LIVE motherboards.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=81724" class="source-link">See Page 41 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>S3d wrappers</h4>
+                    <p>Conversation regarding various wrappers available for the S3d graphics API.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=104456" class="source-link">See Page 41 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Virtua Fighter 2</h4>
+                    <p>A thread discussing the classic fighting game Virtua Fighter 2.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109528" class="source-link">See Page 42 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>EGA Questions</h4>
+                    <p>A user poses questions related to the hardware and capabilities of the Enhanced Graphics Adapter (EGA).</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109483" class="source-link">See Page 42 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>RAM prices have gone insane</h4>
+                    <p>Users express their frustration and observations regarding the current high market prices for RAM.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109498" class="source-link">See Page 43 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>ZuluIDE: A proper IDE device emulator for retro PCs</h4>
+                    <p>Information and community discussion about ZuluIDE, a project aimed at emulating IDE devices for retro computers.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=104518" class="source-link">See Page 43 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Use my X-Fi Forte sound card with a Mini PC (eventually) - what are my options?</h4>
+                    <p>A user looks for solutions to interface an X-Fi Forte sound card with a modern Mini PC.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109506" class="source-link">See Page 44 &raquo;</a>
+
+                </li>
+                <li>
+                    <h4>Project "Backwards". A universal backplane (Status: V1.0)</h4>
+                    <p>Updates on Project "Backwards", a custom universal backplane designed for various single-board computer form factors.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=102519" class="source-link">See Page 44 &raquo;</a>
+
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><strong>Editorial Team:</strong> BILLY BLAZE (Editor-in-Chief) | Johnny Sector, Penny Pentium (Scoops) | Isa Buster (Community) | Apogee Slater (Video) | Ramsy Bytewell (Tech) | C.D. Spinner (Commentary)</p>
+            <p>&copy; Real Mode Weekly &bull; Est. 2025 &bull; Printed on recycled tilemaps.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -19,9 +19,9 @@ Your job is to read them and assemble the next edition as follows:
 ** Newspaper Layout **
 
 Your job is to update the content while respecting the design. The layout is as follows:
-* On top, fancy title bar - where it says Vol. <vol num>,  No. <issue num>, increment the issue number. The date should show today's date, choose the edition (morning / noon / evening) according to the current time. To the right there should be "Cost: 640KB" (this is a running gag).
+* On top, fancy title bar - where it says Vol. <vol num>,  No. <issue num>, increment the issue number. The date should show today's date. To the right there should be "Cost: 640KB" (this is a running gag).
 * Then, a section with today's BIG MAIN stories from the scoops.
-* Then, a large section of items from "community-stories.md", "video.md" and "flair.md". Mix all the items together (no need for sub-sections). Use as many items as you can, in style of an old newspaper. 
+* Then, a large section of items from "community-stories.md", "video.md" and "flair.md". Also use stories from the scoops which did not make it to the previous section. Mix all the items together (no need for sub-sections). Use as many items as you can, in style of an old newspaper. 
 * If you find a particularly funny item in "flair.md", you can give it its own box or a small column.
 * The last section should have all items in "tech-boards.md".
 * Closer (footer): Note the team of reporters, yourself, and the Gradient Descent publication.

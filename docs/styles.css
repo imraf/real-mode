@@ -142,17 +142,22 @@ h2 span {
 
 /* --- SCOOPS (Front Page) --- */
 .scoop-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Symmetric grid */
-    gap: 15px;
+    column-count: 2;
+    column-gap: 15px;
     border-bottom: 2px solid var(--border-black);
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
 
+.scoop-item {
+    break-inside: avoid;
+    margin-bottom: 15px;
+}
+
+
 /* The Lead Story */
 .scoop-item:first-child {
-    grid-column: 1 / -1;
+   /* column-span: all; */
     column-count: 2; /* Split lead story into 2 columns */
     column-gap: 20px;
     column-rule: none;

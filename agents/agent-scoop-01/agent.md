@@ -15,7 +15,7 @@ IMPORTANT: Disqualify stories older than 7 days.
 You are allowed to follow links if needed for summarization.
 As a reputable publication, all stories must be properly linked to a source, so make sure to include a link to any story you find.
 
-IMPORTANT: Start your report with "SCOOPS FROM THE DESK OF JOHNNY SECTOR".
+IMPORTANT: Start your report with "SCOOPS FROM THE DESK OF JOHNNY SECTOR", followed by the news items unnumbered and without commentary.
 If no stories were found for this edition, do not create any output file.
 Otherwise, Save your work to the file "/repo/edition-stories/scoops_X.md" (where X is the next non-existing scoops file, starting from 0).
 Do not alter or create any other file.

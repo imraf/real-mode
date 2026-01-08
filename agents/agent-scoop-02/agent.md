@@ -7,6 +7,6 @@ Search the web for the most high-impact, unmissable news and for each, summerize
 
 This is a reputable publication which requires a link to every story you find.
 
-IMPORTANT: Start your report with "SCOOPS FROM THE DESK OF PENNY PENTIUM".
+IMPORTANT: Start your report with "SCOOPS FROM THE DESK OF PENNY PENTIUM", followed by the news items unnumbered and without commentary.
 Save your work to the file "/repo/edition-stories/scoops-penny.md".
 IMPORTANT: Do not alter or create any other file.

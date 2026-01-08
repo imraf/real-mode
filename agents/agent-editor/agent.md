@@ -29,3 +29,5 @@ Your job is to update the content while respecting the design. The layout is as 
 **OUTPUT**
 
 Create the HTML file "/repo/docs/index.html" (you may overwrite) complete with this edition's contents and design.
+- Convert markdown styling to HTML (i.e. *text* should be in italics, not stars) for italics, bold, code, etc.
+- If the news items are numbered, omit the number (i.e. "2. News Item" -> "News Item").

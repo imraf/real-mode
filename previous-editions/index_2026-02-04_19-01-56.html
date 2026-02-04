@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imraf.github.io/real-mode/">
+    <meta property="og:title" content="Real Mode Wire">
+    <meta property="og:description" content="Classic Computing, Retro Gaming and Beige Hardware">
+    <meta property="og:image" content="https://imraf.github.io/real-mode/images/thumb.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://imraf.github.io/real-mode/">
+    <meta property="twitter:title" content="Real Mode Wire">
+    <meta property="twitter:description" content="Classic Computing, Retro Gaming and Beige Hardware">
+    <meta property="twitter:image" content="https://imraf.github.io/real-mode/images/thumb.jpg">
+
+    <title>Real Mode Wire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Additional inline styles for the new layout requirements */
+        .flair-box {
+            background-color: #e7e7e7;
+            border: 2px solid #333;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-family: 'Courier Prime', monospace;
+            break-inside: avoid;
+        }
+        .flair-box h4 {
+            margin-top: 0;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 5px;
+        }
+        .flair-box p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="masthead">Real Mode Wire</h1>
+            <div class="tagline">System Requirements: 56K Modem, VGA Graphics, Beige Hardware</div>
+            <div class="subhead">
+                <span>Vol. 1, No. 4</span>
+                <span>Jan 15, 2026 • Every First Thu.</span>
+                <span>Cost: 640KB</span>
+            </div>
+        </header>
+
+        <section class="scoops-section">
+            <h2 class="scoops-header"><span>TODAY'S HEADLINES</span></h2>
+            <div class="scoop-grid">
+                <article class="scoop-item">
+                    <h3>"Magnavale: Eternal Soul" - A Symphony Successor?</h3>
+                    <p>"Magnavale: Eternal Soul" is generating significant buzz with a new trailer and Steam page. It looks every bit like the <em>Castlevania: Symphony of the Night</em> successor fans have been craving for decades. The pixel art evokes the gothic grandeur of the 32-bit era, while the tight controls promise to capture that elusive 'Metroidvania' magic. Early footage showcases a diverse arsenal of weapons and spells, suggesting a depth of customization that RPG enthusiasts will adore.</p>
+                    <a href="https://www.timeextension.com/news/2026/01/magnavale-eternal-soul-might-be-the-castlevania-symphony-of-the-night-successor-youve-been-waiting-for" class="source-link">Continued on Page 2 &raquo;</a>
+                    <span class="reporter">— Penny Pentium</span>
+                </article>
+                <article class="scoop-item">
+                    <h3>New Ecco the Dolphin Game Confirmed</h3>
+                    <p>After years of silence and teasing, Ed Annunziata has officially reconfirmed that a new title in the <em>Ecco the Dolphin</em> lineage is in development. It's time to swim with the stars again.</p>
+                    <a href="https://www.timeextension.com/news/2026/01/it-has-been-years-in-the-making-eccos-creator-reconfirms-a-new-game-is-in-development" class="source-link">Continued on Page 3 &raquo;</a>
+                    <span class="reporter">— Penny Pentium</span>
+                </article>
+                <article class="scoop-item">
+                    <h3>Warhammer Owner Bans GenAI</h3>
+                    <p>Games Workshop has taken a stand, banning its creative staff from using Generative AI tools. A significant move in the ongoing debate about AI in creative industries.</p>
+                    <a href="https://www.timeextension.com/news/2026/01/warhammer-owner-games-workshop-bans-its-creative-staff-from-using-genai" class="source-link">Continued on Page 24 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+                <article class="scoop-item">
+                    <h3>Super Mario 64, Now on Dreamcast</h3>
+                    <p>The porting community never sleeps! A native port of <em>Super Mario 64</em> has arrived on the Sega Dreamcast. Reports indicate it plays like a dream, bridging the gap between the two 90s rivals.</p>
+                    <a href="https://www.timeextension.com/news/2026/01/plays-like-a-aaa-native-release-super-mario-64-gets-a-dreamcast-port" class="source-link">Continued on Page 5 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+                <article class="scoop-item">
+                    <h3><em>Action Retro</em> And The G4 Cube Anomaly</h3>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAABhAQAAAABXRbYDAAAABGdBTUEAAHxKnqb+OQAAAAJiS0dEAAHdihOkAAAAB3RJTUUH6gEPCAsM+llv+gAAAqpJREFUSMe9ls2L00AYxqfuLnrbFrbqQRD0puDFi+DBLiTstYUOOZX+C7uH0oNgeizrwbM36V4kgfbgZWnEeFDxDzDoYUOv0oXUgxBMyIzvTCYfkw9k0fUpTenDk99M5528U0Qr9QP9Bz9yHRxLk/zAAC0tJslP0iDJN7yN+BpI/sDlYh963rdr5pPhcU2eyHkHu3G8wDeEzAK/g2I1JD6x10me1ORdOT+7E+vupfDphfnfp7Ge1/Gdv5v/H/ly3sr49uXyicRv1/E/p3w+wHmZPxrC46Am/FfC3yL8AQjL/DEI94r8Y7Kp4Y8pdd1emX/C8mYlf1TmT2v5GnuYU/5E+FfImwvyaR0/cl1c4iO2Ppuwmo8zfpZnu5sIfpTnAx7vV/EDc1nJx62Uv8jzg4VnVvG/7GBRX5rxA+DfNyr4Gu42avhGmY+gA/Vr+OSecSLybZTjgxoyX6y/t075XKx9Ysx6b8rP+qFFLSPjY0m9hD8XReX9k3iGxFfTfD/lW5ZtmXChJAyXGT+HZpeW4NO4vc09j50D3lrwIyc9L1b86OirA+aHIR9B/AiYPvBt8P02pTr12cbUeb61czAE39ulBEZ4DUG2Oh600ckG/LN9GGLgOmDGfEXZG4N/mi0PCKZvzB7o4B+2aASGzlsDn9re9YfgB79oQYQ8Br8XraLUWsE7OnuG4/mHxfxT8LtH1IcvsPN1beRq1Pe15hH473ZJaMytl2vj7afT6Qt2wyQEf4C/ddE2K/wt1ERXgT9Uv4Jv20uxTa6hR2gLjleTnoN/Ax8Kvwmvhv9TG40PwN/QdfL4Tm9Oj1mh7QX4Tro9+SCrj52Gw9YzMJPjaM4u9gwhk9dLE9Vq8wJrcE9bz9VXiELzehLX/UNfVRSlg7YVRcXD9wjd/nf/T34DA5vDxDoriPkAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjYtMDEtMTVUMDg6MTE6MDkrMDA6MDC1p4g/AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI2LTAxLTE1VDA4OjExOjA5KzAwOjAwxPowgwAAABl0RVh0U29mdHdhcmUAZ25vbWUtc2NyZWVuc2hvdO8Dvz4AAAAASUVORK5CYII=" style="width:100%; height:auto; float: none; image-rendering:pixelated; mix-blend-mode:darken; margin-left: 10px;">
+                    <p>Action Retro tears into what appears to be a Power Mac G4 Cube only to find a surprise inside. Whether it's a strange modification or an unexpected upgrade, this teardown reveals a unique hardware anomaly.</p>
+                    <a href="https://www.youtube.com/watch?v=owh13pREKzw" class="source-link">Continued on Page 15 &raquo;</a>
+                    <span class="reporter">— Apogee Slater</span>
+                </article>
+                <article class="scoop-item">
+                    <h3>Dragonyhm Sequel Officially In Development</h3>
+                    <p>Spacebot Interactive has confirmed that a sequel to their Game Boy Color RPG <em>Dragonyhm</em> is officially in the works. Great news for fans of modern 8-bit adventures.</p>
+                    <a href="https://retrododo.com/a-dragonyhm-sequel-is-officially-in-development-from-spacebot-interactive/" class="source-link">Continued on Page 6 &raquo;</a>
+                    <span class="reporter">— Johnny Sector</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="mixed-feed">
+            <h2 class="community-header"><span>COMMUNITY WIRE</span></h2>
+            
+            <article>
+                <h3>LGR Thrifts [Ep.51] Such 60s & 70s Stuff</h3>
+                <p>In this latest thrifting adventure, LGR hunts down electronics and oddities with that distinct mid-century modern flavor. Expect plenty of woodgrain, flip clocks, and early transistor tech as he explores what the 60s and 70s have to offer in 2026.</p>
+                <a href="https://www.youtube.com/watch?v=opQzaToZPII" class="source-link">Continued on Page 9 &raquo;</a>
+                <span class="reporter">— Apogee Slater</span>
+            </article>
+
+            <article>
+                <h3>Chrono Trigger Orchestral Arrangement</h3>
+                <p>A new orchestral album, "Chrono Trigger Orchestral Arrangement - Melodies Across Time," has been released to celebrate the game's 30th anniversary. A musical treat for fans of the timeless RPG.</p>
+                <a href="https://www.timeextension.com/news/2026/01/a-new-orchestral-album-celebrating-the-30th-anniversary-of-chrono-trigger-has-just-been-released" class="source-link">Continued on Page 10 &raquo;</a>
+                <span class="reporter">— Penny Pentium</span>
+            </article>
+
+            <article>
+                <h3>PCSX2 Reaches 99.5% Compatibility</h3>
+                <p>The PlayStation 2 emulator PCSX2 has hit a massive milestone, now supporting over 99.5% of the PS2 library. It's a testament to the decades of hard work by the dev team.</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1oo8gxl/pcsx2_now_supports_over_995_of_ps2_games/" class="source-link">Continued on Page 11 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>Game Preservation Society Goes Global</h3>
+                <p>Facing a funding freeze in Japan, the Game Preservation Society is taking a bold step by launching a Patreon and opening a US office. A vital move to ensure gaming history remains preserved for future generations.</p>
+                <a href="https://www.timeextension.com/news/2026/01/it-has-to-happen-outside-of-japan-game-preservation-society-launches-patreon-and-opens-us-office-following-government-fund-freeze" class="source-link">Continued on Page 4 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>Quest 64 Recompilation Released</h3>
+                <p>The N64 recompilation scene is on fire! <em>Quest 64</em> (aka <em>Holy Magic Century</em>) now joins the ranks of games like Mario 64 and Zelda, allowing for native execution, high-res visuals, and easier modding.</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1qafkjg/quest_64_recompilation_released/" class="source-link">Continued on Page 12 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>Hyperkin Reassures Us That The Mega95 Handheld Is Coming</h3>
+                <p>Hyperkin has broken its silence to reassure fans that the Mega95, their portable Sega Genesis/Mega Drive handheld, is still very much in the pipeline. This update quells rumors of cancellation.</p>
+                <a href="https://retrododo.com/hyperkin-reassures-us-that-the-mega95-handheld-is-coming/" class="source-link">Continued on Page 13 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>Commodore Addresses Quality Control Issues</h3>
+                <p>Commodore has issued a statement regarding quality control issues with the C64 Ultimate, distinguishing between PCB flex (in spec) and buckling (not in spec). A crucial update for hardware enthusiasts.</p>
+                <a href="https://www.timeextension.com/news/2026/01/flex-is-in-spec-buckling-is-not-commodore-addresses-quality-control-concerns-with-its-c64-ultimate" class="source-link">Continued on Page 14 &raquo;</a>
+                <span class="reporter">— Penny Pentium</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>C.D. SPINNER: RE: There's Something Weird Inside this Cube</h4>
+                <p>Action Retro found something "weird" inside a Cube computer. Spoiler alert: It’s usually just dust bunnies and the crushed dreams of Apple’s design team. But hey, maybe he found the missing eject button for the G4 Cube? No? Just more spiders? Classic.</p>
+            </div>
+
+            <article>
+                <h3>Sonic Mania Plus Dreamcast Port Finally Has Audio</h3>
+                <p>The ambitious fan project to port <em>Sonic Mania Plus</em> to the SEGA Dreamcast has hit a massive milestone: it finally has working audio. This brings the port significantly closer to a fully playable experience.</p>
+                <a href="https://retrododo.com/sonic-mania-plus-dreamcast-port-finally-has-audio/" class="source-link">Continued on Page 16 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>Ghosts'n Goblins on Amiga AGA</h3>
+                <p><em>Ghosts'n Goblins</em> is receiving a Commodore Amiga AGA edition by developer JOTD, aiming to retain the original code while optimizing for the AGA chipset.</p>
+                <a href="http://www.indieretronews.com/2026/01/ghostsn-goblins-is-also-getting.html" class="source-link">Continued on Page 17 &raquo;</a>
+                <span class="reporter">— Penny Pentium</span>
+            </article>
+
+            <article>
+                <h3>Sandy Petersen on Doom and Quake</h3>
+                <p>Legendary level designer Sandy Petersen has been spotted discussing game history and the art of level design. Essential reading for anyone interested in the golden age of FPS.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1qa26f4/sandy_petersen_level_designer_on_doom_and_quake/" class="source-link">Continued on Page 18 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>C.D. SPINNER: RE: Sandy Petersen on Doom and Quake</h4>
+                <p>Sandy Petersen is out there chatting about level design like the ancient sage of the shotgun. If you listen closely, you can still hear the screams of players getting lost in <em>Doom II</em>’s "The Chasm." He calls it "game history;" I call it "therapy for my teenage navigational trauma."</p>
+            </div>
+
+             <article>
+                <h3>REVIEW: Philips Fidelio FT1 Vinyl & CD Player</h3>
+                <p>Techmoan puts this modern Philips hybrid device through its paces. Does this all-in-one vinyl and CD solution deliver high-fidelity audio, or is it just another novelty? The review dives deep into build quality and sound performance.</p>
+                <a href="https://www.youtube.com/watch?v=vLJdHxp6XFw" class="source-link">Continued on Page 19 &raquo;</a>
+                <span class="reporter">— Apogee Slater</span>
+            </article>
+
+            <article>
+                <h3>Zelda CD-i Gets a Second Chance</h3>
+                <p>"The Zelda Adventure", the black sheep of the family on Philips CD-i, is getting a fan-made remaster with quality of life improvements. Maybe it wasn't so bad after all? (It probably was).</p>
+                <a href="https://www.timeextension.com/news/2026/01/the-zelda-adventure-nintendo-would-rather-forget-is-getting-a-fan-made-remaster" class="source-link">Continued on Page 20 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>2026 State of the Channel - The 8-Bit Guy</h3>
+                <p>David provides his annual update, reviewing the past year's projects and laying out the roadmap for 2026. Topics include channel sustainability, game development, and upcoming retro computer restorations.</p>
+                <a href="https://www.youtube.com/watch?v=nNVIeTqR60M" class="source-link">Continued on Page 25 &raquo;</a>
+                <span class="reporter">— Apogee Slater</span>
+            </article>
+
+            <article>
+                <h3>Escape from PETSCII Castle</h3>
+                <p>A new Wolfenstein 3D-inspired shooter is in the works for the Commodore 64. "Escape from PETSCII Castle" by Jimbo promises to bring FPS action to the beloved 8-bit micro.</p>
+                <a href="https://www.oldschoolgamermagazine.com/escape-from-petscii-castle-a-wip-wolfenstein-3d-inspiration-but-for-the-commodore-c64-by-jimbo/" class="source-link">Continued on Page 27 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>C.D. SPINNER: RE: Bought these (retro) hardware today</h4>
+                <p>Another poor soul on the boards is confessing to buying more retro junk. It’s not "collecting," pal; it’s just hoarding with better branding. We all know that "rare" 486 motherboard is just going to sit in a box until your spouse asks what "VLB" stands for and why it costs more than dinner.</p>
+            </div>
+
+            <article>
+                <h3>New Sega X Higround Keyboard Collaboration</h3>
+                <p>Sega has partnered with Higround to release a stunning collection of retro-themed keyboards featuring designs inspired by Sonic and the Dreamcast. A stylish addition to any modern retro setup.</p>
+                <a href="https://retrododo.com/new-sega-x-higround-keyboard-collaboration-is-a-retro-gamers-dream/" class="source-link">Continued on Page 28 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>Jet Set Radio Future Decompilation</h3>
+                <p>A project is underway to decompile <em>Jet Set Radio Future</em>, potentially paving the way for a native PC port. The concept of love is definitely understanding this code.</p>
+                <a href="https://www.timeextension.com/news/2026/01/a-decompilation-project-is-currently-in-the-works-for-jet-set-radio-future" class="source-link">Continued on Page 29 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>RIP Stewart Cheifet</h3>
+                <p>The vintage computing community mourns the loss of Stewart Cheifet, the beloved host of <em>Computer Chronicles</em>. His work archived the personal computer revolution for us all.</p>
+                <a href="https://www.reddit.com/r/vintagecomputing/comments/1q0j7tu/stewart_cheifet_from_the_computer_chronicls/" class="source-link">Continued on Page 30 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>E10k StarFire in the Wild</h3>
+                <p>A massive E10k StarFire server was spotted on a local auction site. This is "big iron" spotting at its finest – who has the space and power for this beast?</p>
+                <a href="https://www.reddit.com/r/vintagecomputing/comments/1q2wdc8/e10k_starfire_spotted_on_local_auction_site/" class="source-link">Continued on Page 31 &raquo;</a>
+                <span class="reporter">— Isa Buster</span>
+            </article>
+
+            <article>
+                <h3>"Train" (Vlak) for Atari ST</h3>
+                <p>The 1993 DOS game "Train" (Vlak), similar to Snake, has been converted to the Atari ST by Slovak programmer Baky. A neat little conversion for ST users.</p>
+                <a href="http://www.indieretronews.com/2026/01/vlak-train-another-conversion-makes.html" class="source-link">Continued on Page 32 &raquo;</a>
+                <span class="reporter">— Penny Pentium</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>C.D. SPINNER: RE: CD-ROM drives that "lose the strength" to open</h4>
+                <p>We’ve got a thread about CD-ROM drives too tired to open. Honestly, same. If I had to spin a shiny plastic disc at 52x speed just so you could install <em>Encarta 98</em>, I’d refuse to get out of bed too.</p>
+            </div>
+
+            <article>
+                <h3>Pocket Taco Phone Controller on Kickstarter</h3>
+                <p>The "Pocket Taco," a uniquely designed compact controller for mobile phones, has officially launched its Kickstarter campaign. Its foldable, taco-like design aims to offer portability without sacrificing control.</p>
+                <a href="https://retrododo.com/pocket-taco-phone-controller-is-now-live-on-kickstarter/" class="source-link">Continued on Page 33 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>Why Hyundai & Samsung Remarketed Consoles</h3>
+                <p>An investigation into why Hyundai and Samsung distributed Nintendo and Sega consoles in South Korea. A fascinating look at regional market dynamics in the 90s.</p>
+                <a href="https://retrododo.com/why-hyundai-samsung-remarketed-nintendo-sega-consoles-in-south-korea/" class="source-link">Continued on Page 34 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>LEGO Pokémon Sets Announced</h3>
+                <p>Official LEGO Pokémon sets have finally been announced and are available for pre-order. This collaboration brings the iconic creatures to the brick-building world.</p>
+                <a href="https://retrododo.com/lego-pokemon-sets-officially-announced-up-for-pre-order/" class="source-link">Continued on Page 35 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+             <article>
+                <h3>Fortnite on Nintendo 3DS?</h3>
+                <p>In a feat of homebrew wizardry, a developer has managed to get a version of *Fortnite* running on the Nintendo 3DS. It's a technical curiosity pushing the handheld to its absolute limits.</p>
+                <a href="https://retrododo.com/fortnite-running-on-a-nintendo-3ds-looks-wild/" class="source-link">Continued on Page 36 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+            <article>
+                <h3>Numskull Bubble Bobble Cabinet & Pepsi USB Hub</h3>
+                <p>A look at the new Quarter Arcades Bubble Bobble cabinet and a Pepsi-themed USB hub that mimics a retro vending machine. Perfect for creating a nostalgic desktop arcade setup.</p>
+                <a href="https://retrododo.com/numskull-bubble-bobble-quarter-arcade-pepsi-usb-hub-review/" class="source-link">Continued on Page 37 &raquo;</a>
+                <span class="reporter">— Johnny Sector</span>
+            </article>
+
+        </section>
+
+        <section class="tech-boards-section">
+            <h2 class="tech-boards-header"><span>TECH BOARDS</span></h2>
+            <ul class="tech-list">
+                <li>
+                    <h4>SIV support for 386/486/586 class + Alpha + PowerPC CPUs - Testing Help</h4>
+                    <p>A call for testing help regarding SIV support for various legacy CPUs and GPUs.</p>
+                    <a href="./viewtopic.php?t=68756" class="source-link">See Page 38 &raquo;</a>
+                </li>
+                <li>
+                    <h4>i5 655K woes</h4>
+                    <p>A user sharing their troubles and seeking advice regarding an i5 655K processor.</p>
+                    <a href="./viewtopic.php?t=109762" class="source-link">See Page 39 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Bought these (retro) hardware today</h4>
+                    <p>A long-running thread where users share their recent retro hardware acquisitions.</p>
+                    <a href="./viewtopic.php?t=17341" class="source-link">See Page 40 &raquo;</a>
+                </li>
+                <li>
+                    <h4>EAX appreciation thread</h4>
+                    <p>A discussion thread dedicated to appreciating EAX sound technology.</p>
+                    <a href="./viewtopic.php?t=94106" class="source-link">See Page 41 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Monkey Island Ultimate Talkie Audio Conflict</h4>
+                    <p>A user reporting an audio conflict issue with the Monkey Island Ultimate Talkie edition.</p>
+                    <a href="./viewtopic.php?t=109753" class="source-link">See Page 42 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Is the Radeon 9100 pci the fastest PCI non-geforce k6-3+ compatable video card?</h4>
+                    <p>A question regarding whether the Radeon 9100 PCI is the fastest non-GeForce card compatible with K6-3+ systems.</p>
+                    <a href="./viewtopic.php?t=109693" class="source-link">See Page 43 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Linux distros to consider?</h4>
+                    <p>A request for recommendations on Linux distributions to consider.</p>
+                    <a href="./viewtopic.php?t=109714" class="source-link">See Page 44 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Keyboard not working</h4>
+                    <p>A troubleshooting thread where a user is facing issues with a non-working keyboard.</p>
+                    <a href="./viewtopic.php?t=68417" class="source-link">See Page 45 &raquo;</a>
+                </li>
+                <li>
+                    <h4>What retro activity did you get up to today?</h4>
+                    <p>A community thread where members share their daily retro computing activities.</p>
+                    <a href="./viewtopic.php?t=39993" class="source-link">See Page 46 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Asus P3B-F v1.04 Malfunctioning PS/2 Port</h4>
+                    <p>A user seeking help with a malfunctioning PS/2 port on an Asus P3B-F v1.04 motherboard.</p>
+                    <a href="./viewtopic.php?t=109761" class="source-link">See Page 47 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Please help diagnosing this 286 motherboard</h4>
+                    <p>A request for assistance in diagnosing issues with a 286 motherboard.</p>
+                    <a href="./viewtopic.php?t=109730" class="source-link">See Page 48 &raquo;</a>
+                </li>
+                <li>
+                    <h4>(solved) Plextor optical drives are stuck and won't open. Fix?</h4>
+                    <p>A solved thread detailing a fix for Plextor optical drives that are stuck and won't open.</p>
+                    <a href="./viewtopic.php?t=100618" class="source-link">See Page 49 &raquo;</a>
+                </li>
+                <li>
+                    <h4>CD-ROM drives that "lose the strength" to open</h4>
+                    <p>A discussion about CD-ROM drives that struggle to open their trays.</p>
+                    <a href="./viewtopic.php?t=73941" class="source-link">See Page 50 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Commodore PC10-III/PC20-III/Colt thread</h4>
+                    <p>A dedicated thread for Commodore PC10-III, PC20-III, and Colt computers.</p>
+                    <a href="./viewtopic.php?t=69237" class="source-link">See Page 51 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Guide: Installing Windows 9x and DOS drivers on Audigy cards (version 3.1)</h4>
+                    <p>A guide on how to install Windows 9x and DOS drivers for Audigy sound cards.</p>
+                    <a href="./viewtopic.php?t=71449" class="source-link">See Page 52 &raquo;</a>
+                </li>
+                <li>
+                    <h4>PC Chips M326 v5.4 386/40 motherboard slowness issues</h4>
+                    <p>A user reporting slowness issues with a PC Chips M326 v5.4 386/40 motherboard.</p>
+                    <a href="./viewtopic.php?t=109760" class="source-link">See Page 53 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Half-Life (Pre-Steam Pipe) Antialiasing Issue</h4>
+                    <p>A thread discussing antialiasing issues in the pre-Steam Pipe version of Half-Life.</p>
+                    <a href="./viewtopic.php?t=109742" class="source-link">See Page 54 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Low fps + mouse sluttering</h4>
+                    <p>A user seeking help for low FPS and mouse stuttering issues in dgVoodoo.</p>
+                    <a href="./viewtopic.php?t=109759" class="source-link">See Page 55 &raquo;</a>
+                </li>
+                <li>
+                    <h4>[Release] G.R.O.G. - A Text-Mode, Zero-RAM-Overhead Launcher for DOS</h4>
+                    <p>An announcement for the release of G.R.O.G., a text-mode launcher for DOS with zero RAM overhead.</p>
+                    <a href="./viewtopic.php?t=109577" class="source-link">See Page 56 &raquo;</a>
+                </li>
+                <li>
+                    <h4>AI Integration. What are you thoughts on it all?</h4>
+                    <p>A discussion thread asking for members' thoughts on AI integration.</p>
+                    <a href="./viewtopic.php?t=109681" class="source-link">See Page 57 &raquo;</a>
+                </li>
+                <li>
+                    <h4>X Fi Titanium not recognised by accompanying Creative software in Windows XP</h4>
+                    <p>A troubleshooting thread about an X-Fi Titanium card not being recognized by Creative software in Windows XP.</p>
+                    <a href="./viewtopic.php?t=109749" class="source-link">See Page 58 &raquo;</a>
+                </li>
+                <li>
+                    <h4>LG 776FM Flatron CRT Monitor servicing/calibration help required</h4>
+                    <p>A request for help with servicing and calibrating an LG 776FM Flatron CRT monitor.</p>
+                    <a href="./viewtopic.php?t=102012" class="source-link">See Page 59 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Lands of Lore 3 Talamari and Baccanel guild quest issues</h4>
+                    <p>A thread discussing issues with Talamari and Baccanel guild quests in Lands of Lore 3.</p>
+                    <a href="./viewtopic.php?t=107524" class="source-link">See Page 60 &raquo;</a>
+                </li>
+                <li>
+                    <h4>D-Fend Reloaded (DOSBox frontend)</h4>
+                    <p>A sticky thread discussing D-Fend Reloaded, a frontend for DOSBox.</p>
+                    <a href="./viewtopic.php?t=17415" class="source-link">See Page 61 &raquo;</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><strong>Editorial Team:</strong> BILLY BLAZE (Editor-in-Chief) | Johnny Sector, Penny Pentium (Scoops) | Isa Buster (Community) | Apogee Slater (Video) | Ramsy Bytewell (Tech) | C.D. Spinner (Commentary)</p>
+            <p>&copy; Real Mode Wire &bull; Est. 2025 &bull; Printed on recycled tilemaps &bull; Gradient Descent Publication</p>
+        </footer>
+    </div>
+</body>
+</html>
